@@ -19,7 +19,7 @@ const NavBar = () => {
     {
       id: 3,
       link: "portfolio",
-      path:"/portfolio"
+      path:"/myportfolio"
     },
     {
       id: 4,
@@ -34,9 +34,9 @@ const NavBar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 bg-black text-white fixed">
+    <div className="flex justify-between items-center w-full h-15 px-4 bg-black text-white fixed">
       <div>
-        <h1 className="text-5xl font-signature ml-2">Martin Resnicoff</h1>
+        <h1 className="text-4xl font-signature ml-2">Martin Resnicoff</h1>
       </div>
 
       <ul className="hidden md:flex">

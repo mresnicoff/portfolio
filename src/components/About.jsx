@@ -8,11 +8,11 @@ const About = () => {
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+          <p className="text-3xl font-bold inline border-b-4 border-gray-500">
             About
           </p>
         </div>
-        <p className="text-xl mt-20">
+        <p className="text-xl mt-18">
           I am a full stack developer with a background in Industrial Engineering and logistics. 
           I love learning new stuff all the time. Not only learning new programming languages and databases, but learning new ways of working too. I think it's remarkable the way working changed since I started my journey. Self-managed teams were a dream of the future and now it is a reality.
         </p>
