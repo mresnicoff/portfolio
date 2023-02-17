@@ -9,7 +9,7 @@ const NavBar = () => {
     {
       id: 1,
       link: "home",
-      path:"/"
+      path:"/portfolio"
     },
     {
       id: 2,

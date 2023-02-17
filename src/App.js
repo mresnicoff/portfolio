@@ -13,7 +13,7 @@ function App() {
       <NavBar />
       <SocialLinks />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/portfolio" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/myportfolio" element={<Portfolio />} />
         <Route path="/experience" element={<Experience />} />
