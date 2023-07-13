@@ -2,10 +2,12 @@ import React from "react";
 import weather from "../assets/portfolio/weather.png";
 import memory from "../assets/portfolio/memory.png";
 import dino from "../assets/portfolio/dino.png";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
-import { FaDiceOne } from "react-icons/fa";
+import rick from "../assets/portfolio/rick.png";
+import countries from "../assets/portfolio/countries.png";
+import flightDeck from "../assets/portfolio/flightDeck.png";
+import excel from "../assets/portfolio/excel.png";
+import gridStatus from "../assets/portfolio/gridstatus.png";
+
 
 const Portfolio = () => {
   const openURL=(e)=>{window.open(e.target.value, '_blank').focus();}
@@ -29,13 +31,44 @@ const Portfolio = () => {
       URL:"https://mresnicoff.github.io/dinosaurio_chrome",
       URL2:"https://github.com/mresnicoff/dinosaurio_chrome"
     },
+    {
+      id: 4,
+      src: rick,
+      URL:"https://mresnicoff.github.io/rickfront",
+      URL2:"https://github.com/mresnicoff/rickfront"
+    },
+        {  id: 5,
+      src: countries,
+      URL2:"https://github.com/mresnicoff/countriesfront",
+    
+    },
+            {  id: 6,
+      src: flightDeck,
+      URL:"https://github.com/mresnicoff/FLIGHT-DECK",
+      URL2:"https://flight-deck-ten.vercel.app/"
+    
+    },
+                {  id: 7,
+      src: excel,
+      URL2:"https://github.com/mresnicoff/excelfront",
+  
+    
+    },
+  {  id: 8,
+src: gridStatus,
+URL:"https://github.com/mresnicoff/gridstatus",
+
+
+},
+
+
 
   ];
 
   return (
     <div
       name="portfolio"
-      className="bg-gradient-to-b from-black to-gray-800 w-full md:h-screen text-white"
+      className="bg-gradient-to-b from-black to-gray-800 w-full  text-white"
     >
       <div className="max-w-screen-lg py-1 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
@@ -54,12 +87,12 @@ const Portfolio = () => {
                 className="rounded-md duration-200 hover:scale-105"
               />
               <div className="flex items-center justify-center">
-                <button onClick={openURL} value={URL}className=" w-1/2 px-6 py-1 m-4 duration-200 hover:scale-105">
+              {URL &&  <button onClick={openURL} value={URL}className=" w-1/2 px-6 py-1 m-4 duration-200 hover:scale-105">
                   Demo
-                </button>
-                <button onClick={openURL} value={URL2} className="px-6 py-1 w-1/2 m-4 duration-200 hover:scale-105">
+                </button>}
+               {URL2 && <button onClick={openURL} value={URL2} className="px-6 py-1 w-1/2 m-4 duration-200 hover:scale-105">
                   Code
-                </button>
+                </button>}
               </div>
             </div>
           ))}
